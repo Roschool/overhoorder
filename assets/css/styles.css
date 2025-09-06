@@ -1,0 +1,34 @@
+/* Material 3 "expressive" inspired styles (light) - compact */
+:root{
+  --primary:#6750A4;
+  --on-primary:#FFFFFF;
+  --primary-container:#EADDFF;
+  --on-primary-container:#21005E;
+  --surface:#FFFBFE;
+  --on-surface:#1C1B1F;
+  --surface-variant:#E7E0EC;
+  --on-surface-variant:#49454F;
+  --outline:#79747E;
+  --error:#B3261E;
+  --on-error:#FFFFFF;
+  --radius-xl:20px;
+  --shadow-1:0 1px 2px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.06);
+  --shadow-2:0 6px 16px rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#F5F2FF,#FFE6F1);min-height:100%;color:var(--on-surface)}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.app-title{font-size:clamp(28px,4vw,40px);font-weight:800;color:#2B225C;margin:8px 0 16px}
+.card{background:var(--surface);border-radius:var(--radius-xl);border:1px solid rgba(0,0,0,.06);box-shadow:var(--shadow-1);padding:20px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--primary-container);color:var(--on-primary-container);font-weight:600}
+.helper{color:var(--on-surface-variant);font-size:13px}
+.btn-primary{background:var(--primary);color:var(--on-primary);border:none;padding:10px 14px;border-radius:14px;font-weight:700;text-decoration:none}
+.btn-secondary{background:var(--primary-container);color:var(--on-primary-container);padding:8px 12px;border-radius:12px;text-decoration:none}
+.btn-text{background:transparent;color:var(--primary);padding:6px 8px;border-radius:10px}
+.btn-danger{background:var(--error);color:var(--on-error);padding:8px 12px;border-radius:12px;text-decoration:none}
+.table{width:100%;border-collapse:collapse}
+.table th{font-size:12px;text-align:left;padding:8px 12px;color:var(--on-surface-variant)}
+.table td{background:#fff;padding:10px;border-top:1px solid #eee}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#D1FADF;color:#065F46;font-size:12px;font-weight:700}
+input,select,textarea{width:100%;padding:10px;border-radius:12px;border:1px solid var(--surface-variant);background:#fff}
+#students-list-container{-webkit-user-select:none;-ms-user-select:none;user-select:none}
